@@ -84,6 +84,10 @@ $wallet-view-bg: $alabaster;
     text-align: right;
     padding: 17px 20px 0;
     box-sizing: border-box;
+
+    [dir='rtl'] & {
+      text-align: left;
+    }
   }
 
   &__details-button {
@@ -128,6 +132,11 @@ $wallet-view-bg: $alabaster;
         top: 12px;
         left: 12px;
         cursor: pointer;
+
+        [dir='rtl'] & {
+          left: auto;
+          right: 12px;
+        }
       }
     }
   }
@@ -146,6 +155,11 @@ $wallet-view-bg: $alabaster;
 .wallet-view-title {
   margin-left: 15px;
   font-size: 16px;
+
+  [dir='rtl'] & {
+    margin-left: 0;
+    margin-right: 15px;
+  }
 
   // No title on mobile
   @media screen and (max-width: 575px) {
